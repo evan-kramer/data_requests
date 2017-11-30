@@ -37,4 +37,4 @@ ov = bind_rows(sr, k2) %>%
     mutate(pool = ifelse(is.na(pool), "K2", pool),
            system_name = str_replace(str_to_title(system_name), " Schools", ""))
 
-#write_excel_csv(a, "C:/Users/CA19130/Downloads/")
+write_excel_csv(ov, "C:/Users/CA19130/Downloads/charter_grant_achievement_data.csv", na = "")
